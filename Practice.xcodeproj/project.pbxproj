@@ -42,6 +42,7 @@
 		720C73BA1F6F9CFB00258860 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 720C73B61F6F987200258860 /* test.png */; };
 		720C73BB1F6F9CFD00258860 /* shoto-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 720C73B81F6F9C8C00258860 /* shoto-bg.png */; };
 		72D6CB6F1FE77A2900D45971 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D6CB6E1FE77A2900D45971 /* Person.m */; };
+		72E5ACF11FE8C7A80059D8AB /* AlgoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5ACF01FE8C7A80059D8AB /* AlgoTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +126,8 @@
 		724B70511F71062000829404 /* AFHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		72D6CB6D1FE77A2900D45971 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		72D6CB6E1FE77A2900D45971 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		72E5ACED1FE8C3EE0059D8AB /* Practice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Practice-Bridging-Header.h"; sourceTree = "<group>"; };
+		72E5ACF01FE8C7A80059D8AB /* AlgoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				7203FCDB1EEEEB0D004345C8 /* LaunchScreen.storyboard */,
 				7203FCDE1EEEEB0D004345C8 /* Info.plist */,
 				7203FCCD1EEEEB0B004345C8 /* Supporting Files */,
+				72E5ACED1FE8C3EE0059D8AB /* Practice-Bridging-Header.h */,
+				72E5ACF01FE8C7A80059D8AB /* AlgoTest.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 					7203FCC91EEEEB0A004345C8 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 735YP7K6G5;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -391,6 +397,7 @@
 				7203FD161EF24D53004345C8 /* SDWebImageDecoder.m in Sources */,
 				7203FD101EF24D53004345C8 /* MKAnnotationView+WebCache.m in Sources */,
 				7203FD111EF24D53004345C8 /* NSData+ImageContentType.m in Sources */,
+				72E5ACF11FE8C7A80059D8AB /* AlgoTest.swift in Sources */,
 				7203FD151EF24D53004345C8 /* SDWebImageCompat.m in Sources */,
 				72D6CB6F1FE77A2900D45971 /* Person.m in Sources */,
 				7203FCCF1EEEEB0B004345C8 /* main.m in Sources */,
@@ -519,6 +526,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 735YP7K6G5;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -531,6 +540,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shotoinc.shoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Practice/Practice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -538,6 +550,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 735YP7K6G5;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -550,6 +564,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shotoinc.shoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Practice/Practice-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

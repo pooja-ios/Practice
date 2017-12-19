@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Person.h"
+#import "Practice-Swift.h"
 
 @interface AppDelegate ()
 
@@ -49,6 +50,8 @@
     [self getIdentifier];
     
     [self test];
+    
+    [AlgoTest binarySearch];
     
     return YES;
 }
